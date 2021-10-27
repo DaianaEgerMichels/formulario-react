@@ -23,7 +23,7 @@ class Form extends Component{
 
     async componentDidMount(){
         const result = await fetch("/api/expertises");
-        const data = await result.jason();
+        const data = await result.json();
         this.setState({expertises: data.expertises})
     }
 
@@ -65,12 +65,14 @@ class Form extends Component{
                         <option value="" selected disabled>{/*para desabilitar a seleção da opção, ela aparece, mas não pode ser selecionada */}
                             Selecione...
                         </option>
-                        {this.state.expertises.map(expertise => <option value={expertise}>{expertise}</option>)}
+                        {this.state.expertises.map((e) => (<option value={e}>{e}</option>))}
                         {/* ^^ Dinamizando o option com uso de Moke, dados externos  <option value="React Developer">React Developer</option>
                         <option value="Java Developer">Java Developer</option>*/}
                     </select>
                 </label>
-                <button>Enviar</button>
+                <label>
+                    <input type='submit' value='Enviar' className="button"></input>
+                </label>
             </form>
         )
     }

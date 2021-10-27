@@ -27,6 +27,7 @@
   ::placeholder, select{
     background: rgb(127, 230, 238);
     color: rgb(37, 43, 77);
+    text-align: center;
   }
 
   select{
@@ -34,7 +35,7 @@
     height: 25px;
   }
 
-  button{
+  .button{
     width: 90px;
     height: 25px;
     border: 1px solid gray;
