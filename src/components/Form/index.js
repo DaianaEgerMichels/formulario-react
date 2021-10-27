@@ -70,6 +70,7 @@ class Form extends Component{
                         <option value="Java Developer">Java Developer</option>*/}
                     </select>
                 </label>
+                <button>Enviar</button>
             </form>
         )
     }

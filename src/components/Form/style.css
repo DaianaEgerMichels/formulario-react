@@ -33,3 +33,11 @@
     width: 180px;
     height: 25px;
   }
+
+  button{
+    width: 90px;
+    height: 25px;
+    border: 1px solid gray;
+    background: rgb(50, 48, 173);
+    color: white;
+  }
