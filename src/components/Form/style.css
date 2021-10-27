@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+  }
+  
+  form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: none;
+    background: none;
+    width: 200px;
+    height: auto;
+    margin: 8px;
+    color: black;
+    font-size: 16px;
+    text-align: justify;
+    gap:20px;
+  }
+
+  ::placeholder, select{
+    background: rgb(127, 230, 238);
+    color: rgb(37, 43, 77);
+  }
+
+  select{
+    width: 180px;
+    height: 25px;
+  }
