@@ -61,7 +61,7 @@ class Form extends Component{
                 </label>
                 <label>
                     Especialidade:
-                    <select name="expertise" value={this.state.expertise}>
+                    <select name="expertise" value={this.state.expertise} onChange={this.handleChange}>
                         <option value="" selected disabled>{/*para desabilitar a seleção da opção, ela aparece, mas não pode ser selecionada */}
                             Selecione...
                         </option>
